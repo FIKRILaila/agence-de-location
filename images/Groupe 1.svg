@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1481" height="889" viewBox="0 0 1481 889">
+  <defs>
+    <style>
+      .cls-1, .cls-2, .cls-3 {
+        fill: #ffca00;
+      }
+
+      .cls-1 {
+        font-size: 735px;
+      }
+
+      .cls-1, .cls-3 {
+        font-family: Magneto-Bold, Magneto;
+        font-weight: 700;
+      }
+
+      .cls-3 {
+        font-size: 372px;
+      }
+    </style>
+  </defs>
+  <g id="Groupe_1" data-name="Groupe 1" transform="translate(-216 52)">
+    <text id="L" class="cls-1" transform="translate(216 615)"><tspan x="0" y="0">L</tspan></text>
+    <path id="Rectangle_3" data-name="Rectangle 3" class="cls-2" d="M0,0H1069a0,0,0,0,1,0,0V0a57,57,0,0,1-57,57H0a0,0,0,0,1,0,0V0A0,0,0,0,1,0,0Z" transform="translate(627 558)"/>
+    <text id="cars" class="cls-3" transform="translate(805 506)"><tspan x="0" y="0">cars</tspan></text>
+  </g>
+</svg>

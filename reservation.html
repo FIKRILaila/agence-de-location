@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Location de vehicule</title>
+    <link rel="icon" href="images/Groupe 1.svg">
+    <meta name="description" content="rent car">
+    <link rel="stylesheet" href="css/reservation.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+</head>
+<body>
+
+        <header>
+            <nav>
+                <img src="images/Groupe 1.svg" alt="logo">
+                <button class="ham"></button>
+                <nav class="navbar">
+                  <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="gallery.html">gallery</a></li>
+                    <li><a href="reservation.html" class="actuel">reservation</a></li>
+                    <li><a href="contact.html">contact</a></li>
+                  </ul>
+                </nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="gallery.html">gallery</a></li>
+                    <li><a href="reservation.html" class="actuel">reservation</a></li>
+                    <li><a href="contact.html">contact</a></li>
+                  </ul> 
+            </nav>
+        </header>
+
+
+<section class="reservation">
+    <div class="inner">
+        <section>
+            <div class="Type">
+                <h2>Type of the vehicle</h2>
+            <select name="type" id="type" onchange="calcule()">
+                <option>Select Type</option>
+                <option>Moto</option>
+                <option>Citadine</option>
+                <option>Compact</option>
+                <option>Berline</option>
+                <option>Utilitaire</option>
+                <option>Engin de Chantier</option>
+                <option>Camion</option>
+            </select>
+            </div>
+
+            <div class="tranmission">
+            <h2>Transmission</h2>
+            <div>
+                <div>
+                    <input type="radio" id="Manual" name="transmission">
+                    <label for="Manual">Manual</label><br>
+                </div>
+                <div>
+                    <input type="radio" id="Automatique" name="transmission">
+                    <label for="Automatique">Automatique</label><br>
+                </div>
+            </div>
+            </div> 
+
+           <div class="fuel"> 
+            <h2>Fuel</h2>
+            <div>
+                <div>
+            <input type="radio" id="Electrique" name="fuel" onclick="fuelID(this.id)">
+            <label for="Electrique">Electrique</label><br>
+                </div>
+
+                <div>
+            <input type="radio" id="Hybride" name="fuel" onclick="fuelID(this.id)">
+            <label for="Hybride">Hybride</label><br>  
+                </div> 
+
+                <div>
+            <input type="radio" id="Essence" name="fuel" onclick="fuelID(this.id)">
+            <label for="Essence">Essence</label><br>
+                </div> 
+
+                <div>
+            <input type="radio" id="Diesel" name="fuel" onclick="fuelID(this.id)">
+            <label for="Diesel">Diesel</label><br>
+                </div> 
+            </div>
+        </div>
+            <div>
+            <h2>Days :</h2>
+            <input type="number" min="1" id="days">
+            <button class="btn" onclick="laila()">Submit</button>
+            </div>
+
+            <div id="placeHolder">
+                <div class="border">
+                <h1>Total Price: &nbsp &nbsp</h1>
+                <h1 id="prix"></h1>
+                <h1>&nbsp $</h1>
+            </div>
+               
+            </div>
+           
+        
+        </section>
+
+    </div>
+
+</section>
+
+
+<footer>
+    <div class="footer-content">
+        <h3>LCARS</h3>
+        <P>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit, ipsa esse porro quo inventore expedita dolore doloribus, sint rerum fuga, exercitationem maxime aliquam.</P>
+        <ul class="sociales">
+            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+            <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+            <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+        </ul>
+    </div>
+    <div class="footer-bottom">
+        <p>copyright &copy;2020 codeOpacity. designed by <span>nethunt
+        </span> </p>
+    </div>
+</footer>
+        <script>
+            var navbar = document.querySelector(".navbar")
+        var ham = document.querySelector(".ham")
+
+        ham.addEventListener("click", toggleHamburger)
+
+        function toggleHamburger(){
+        navbar.classList.toggle("showNav")
+        ham.classList.toggle("showClose")
+        }
+        </script>
+        <script src="main.js"></script>
+</body>
+</html>

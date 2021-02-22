@@ -1,0 +1,456 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins',sans-serif;
+}
+body{
+    width: 100%;
+    overflow-x: hidden;
+}
+.imgbackground{
+    height: 100vh;
+    background-image: url('../images/home.jpg');
+    background-position: center;
+    background-size: cover;
+}
+nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+} 
+li{
+    display:inline-block;
+    padding: 5px 20px;
+    text-transform: uppercase;
+}
+.actuel{
+    color: #FFCA00;
+}
+nav{
+    display:flex;
+    justify-content: space-between;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+nav img{
+    width: 200px;
+}
+.icon{
+    display: none;
+}
+li a{
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    margin:10px;
+}
+header{
+    background-color: rgba(0, 0, 0);
+}
+.home h4{
+    color: #000000;
+    background-color:#FFCA00;
+    display: inline-block;
+    padding: 15px 20px;
+    border-radius: 50px;
+}
+.home{
+    color: white;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+.home a{
+    text-decoration:none;
+}
+.home{
+    color: white;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    margin-top:50px;
+}
+.home div{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.home div h1{
+    width: 50%;
+    font-size: 40px;
+    text-align: center;
+}
+.home div .reserve{
+    display: flex;
+    justify-content: center;
+}
+span{
+    color: #FFCA00;
+}
+.home P{
+    margin-top: 200px;
+    margin-bottom: 50px;
+    font-size:20px;
+    width: 80%;
+    text-align: center;
+}
+.advantages {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 100px 150px;
+}
+.advantages h1{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    display: inline;
+    margin-bottom: 100px;
+}
+.advantages .item {
+    flex: 30%;
+    background: #b8b8b2;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 50px;
+    margin: 0 20px;
+    width: 100%;
+}
+.advantages .item h4{
+    margin:20px 0;
+    text-align: center;
+}
+.advantages .item p{
+    margin:10px 0;
+    text-align: center;
+}
+.advantages .item img {
+    width: 80px;
+    margin: 20px;
+}
+.advantages .items{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    margin: 0 50px;
+}
+.advantages .items .ITEM{
+    background-color: #FFCA00;
+}
+.whoAre{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin: 100px 150px;
+}
+.whoAre .image{
+    width: 50%;
+}
+.whoAre .image img{
+    width: 100%;
+}
+.whoAre .paragraphe{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    text-align:left;
+}
+.whoAre .paragraphe h1{
+    margin:30px 0;
+}
+.drivers{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 100px 200px;
+}
+.drivers h1{
+    margin-bottom: 100px;
+    margin-top: 20px;
+}
+.drivers > div{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap:2%;
+}
+.drivers .driver{
+    color: #000000;
+    background-color: #fff;
+    box-shadow: 0px 5px 18px rgba(0, 0, 0, 0.596);
+    display: flex;
+    flex: 1;
+    height: 300px;
+}
+.drivers .driver image{
+    width: 50%;
+}
+.drivers .driver img{
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+}
+.drivers .driver >div{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content:center;
+}
+.drivers .driver >div h3{
+    margin-bottom:10px;
+}
+footer{
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #000;
+    height: auto;
+    width: 100vw;
+    font-family:"poppins";
+    padding-top: 40px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.footer-content h3{
+    font-size: 30px;
+    font-weight:500;
+    text-transform: capitalize;
+    line-height: 3rem;
+    color:#FFCA00;
+} 
+.footer-content p{
+    max-width: 500px;
+    margin:10px auto;
+    line-height: 28px;
+    font-size: 14px;
+} 
+.sociales{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+.sociales li{
+    margin: 0 10px;
+}
+.sociales a{
+    text-decoration:none;
+    color: #fff;
+}
+.sociales a i{
+    font-size: 1.1rem;
+    transition: color .4s ease;
+}
+.sociales a:hover i{
+    color:#FFCA00;
+}
+.footer-bottom{
+    background: #000;
+    width: 100vh;
+    padding:20px 0;
+    text-align: center;
+}
+.footer-bottom p{
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform:capitalize;
+}
+.footer-bottom span{
+   text-transform: uppercase;
+   opacity: .4;
+   font-weight: 200;
+}
+
+
+
+.ham {
+    display: none;
+    position: absolute;
+    /* always keep ham on top of everything */
+    z-index: 1000;
+    top: 20px;
+    right: 20px;
+    width: 36px;
+    height: 36px;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    /* show the menu image */
+    background-image: url("../images/menu.svg");
+    background-size: 100%;
+  }
+  .showClose {
+    background-image: url("../images/close.svg");
+  }
+  .navbar {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background: black;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    color: white;
+    /* hide the menu above the screen by default */
+    transform: translateY(-100%);
+    /* transition adds a little animation when sliding in and out the menu */
+    transition: transform 0.2s ease;
+  }
+  .showNav {
+    /* show the menu */
+    transform: translateY(0);
+  }
+
+@media only screen and (max-width:37.5em){
+    
+    .footer-content p{
+        max-width: 400px;
+    }
+    .home div h1{
+        width: 100%;
+    }
+    .home P{
+        margin-top: 150px;
+        width: 100%;
+    }
+    .whoAre{
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        margin: 0 auto;
+    }
+    .whoAre .image{
+        width: 100%;
+    }
+    .whoAre .image img{
+        width: 100%;
+    }
+    .whoAre .paragraphe{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        text-align:center;
+    }
+    .whoAre .paragraphe h1{
+        margin:20px 0;
+    }
+    .advantages {
+        margin: 40px 40px  40px 0px;
+    }
+    .advantages h1{
+        margin-bottom: 40px;
+    }
+    .advantages .item {
+        padding: 20px;
+        margin: 10px 0px;
+    }
+    .advantages .item img {
+        width: 80px;
+    }
+    .advantages .items{
+        display: flex;
+        flex-direction: column;
+        justify-content:space-between;
+    }
+    .drivers{
+        margin: 30px 40px;
+    }
+    .drivers h1{
+        margin-bottom: 100px;
+        margin-top: 20px;
+    
+    }
+    .drivers > div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .drivers .driver{
+        margin-bottom: 20px;
+    }
+     nav ul{
+        display: none;
+    } 
+    nav{
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+    header > nav{
+        justify-content: space-between;
+    }
+    .ham{
+        display: block;
+    }
+    .navbar {
+        margin-left: 00px;
+     margin-right: 00px;
+     display: flex;
+    justify-content: center;
+    }
+    .navbar ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    nav img{
+        width: 140px;
+    }
+}
+@media (max-width: 575px){
+    .footer-bottom {
+        width: 100%;
+    }
+    .sociales {
+        display: none;
+    }
+    .fuel >div {
+        flex-direction: column;
+    }
+    .reservation .tranmission >div {
+        flex-direction: column;
+    }
+    .reservation .tranmission >div >div {
+        margin-right: 0 !important;
+
+    }
+    .reservation .tranmission >div {
+        text-align: left !important;
+    }
+    select {
+        padding: 0 !important;
+    }
+    .inner {
+        height: auto !important;
+        margin-top: 90px;
+        margin-bottom: 50px;
+    }
+    .inner section {
+        margin-bottom: 0 !important;
+    }
+    button {
+        margin-bottom: 20px;
+    }
+    .border h1{
+        font-size: 18px;
+    }
+
+}

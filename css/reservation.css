@@ -1,0 +1,97 @@
+@import "index.css";
+.reservation {
+    height: 100vh;
+    background-image:url(../images/andrey-zvyagintsev-hBH1KBxDno8-unsplash.jpg);
+    background-size: cover;
+    background-position: center; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+}
+.inner{
+    background-color:#fff;
+    width: 50%;
+    height: 60vh;
+    padding: 50px;
+    box-shadow: 0px 5px 18px rgba(0, 0, 0, 0.603);
+    display: flex;
+    justify-content: space-around;
+}
+
+.inner section{
+    margin-bottom:100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+    width: 90%;
+    text-align: start;
+}
+.reservation .tranmission{
+    display: flex;
+    flex-direction: column;
+}
+.reservation .tranmission >div {
+    display: flex;
+    width: 80%;
+    height: 50%;
+    text-align: center;
+}
+.reservation .tranmission >div >div{
+    margin-right: 190px;
+}
+.fuel >div{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+section h1{
+    display: flex;
+    justify-content: flex-end;
+}
+#placeHolder{
+    display: flex;
+    justify-content: flex-end;
+}
+.inner section .tranmission{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.border{
+    background-color: black;
+    color: #FFCA00;
+    padding: 15px;
+    display: flex;
+}
+label{
+    font-size: 17px;
+    font-weight: 500;
+}
+section h2{
+    margin-bottom:20px;
+    text-decoration: 4px underline #FFCA00;
+}
+select{
+    border: none;
+    outline: none;
+    border:2px solid;
+    padding:0 40px;
+}
+select,input{
+    font-size: 17px;
+    font-weight: 500;
+
+}
+.inner button{
+    font-size: 17px;
+    font-weight: 500;  
+    background-color: black;
+    color: #FFCA00;
+    padding:10px 25px;
+}
+input{
+    border: none;
+    border-bottom:2px solid;
+    outline: none;
+}

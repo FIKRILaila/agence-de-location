@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Location de vehicule</title>
+    <link rel="icon" href="images/Groupe 1.svg">
+    <meta name="description" content="rent car">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <img src="images/Groupe 1.svg" alt="logo">
+            <button class="ham"></button>
+                <nav class="navbar">
+                  <ul>
+                    <li><a href="index.html">Home</a></li>
+                <li><a href="gallery.html">gallery</a></li>
+                <li><a href="reservation.html">reservation</a></li>
+                <li><a href="contact.html" class="actuel">contact</a></li>
+                  </ul>
+                </nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="gallery.html">gallery</a></li>
+                <li><a href="reservation.html">reservation</a></li>
+                <li><a href="contact.html" class="actuel">contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="contact">
+        <div class="content">
+            <h1>Contact Us</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut sed laborum voluptatum fugiat quam, non illo
+                eos impedit placeat, quaerat vel? Illo eius distinctio debitis enim voluptas ab repellat assumenda.</p>
+        </div>
+        <div class="container">
+            <div class="contactInfo">
+                <div class="box">
+                    <div class="icon"><i class="fas fa-map-marker"></i></div>
+                    <div class="text">
+                        <h3>Adresse</h3>
+                        <p>23, New Paris Street, Paris, France</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon"><i class="fas fa-phone"></i></div>
+                    <div class="text">
+                        <h3>Phone</h3>
+                        <p>+354-263-2837</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon"><i class="far fa-envelope"></i></div>
+                    <div class="text">
+                        <h3>Email</h3>
+                        <p>Lcars_Location@Email.net</p>
+                    </div>
+                </div>
+            </div>
+            <div class="contactForm">
+                <div>
+                    <h2>Send Message</h2>
+                    <div class="inputBox">
+                        <input type="text" name="" required="required">
+                        <span>Full Name</span>
+                    </div>
+                    <div class="inputBox">
+                        <input type="text" name="" required="required">
+                        <span>Email</span>
+                    </div>
+                    <div class="inputBox">
+                        <input type="text" name="" required="required">
+                        <span>Type your Message</span>
+                    </div>
+                    <div class="inputBox">
+                        <input type="submit" name="" value="Send" onclick="modal()">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-content">
+            <h3>LCARS</h3>
+            <P>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit, ipsa esse porro quo inventore expedita dolore doloribus, sint rerum fuga, exercitationem maxime aliquam.</P>
+            <ul class="sociales">
+                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+            </ul>
+        </div>
+        <div class="footer-bottom">
+            <p>copyright &copy;2020 codeOpacity. designed by <span>nethunt
+            </span> </p>
+        </div>
+    </footer>
+    <script>
+        var navbar = document.querySelector(".navbar")
+var ham = document.querySelector(".ham")
+
+ham.addEventListener("click", toggleHamburger)
+
+function toggleHamburger(){
+    navbar.classList.toggle("showNav")
+    ham.classList.toggle("showClose")
+  }
+
+  function modal(){
+      var name = document.querySelector("body > section > div.container > div.contactForm > div > div:nth-child(2) > input[type=text]").value
+      var email = document.querySelector("body > section > div.container > div.contactForm > div > div:nth-child(3) > input[type=text]").value
+      var message = document.querySelector("body > section > div.container > div.contactForm > div > div:nth-child(4) > input[type=text]").value
+
+      alert("Name : " + name+ "\nmail : " + email+ "\nMessage : " + message)
+  }
+    </script>
+</body>
+
+</html>
